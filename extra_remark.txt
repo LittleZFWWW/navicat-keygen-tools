@@ -1,0 +1,9 @@
+2022-01-20.1
+1.-lplist++库缺失
+https://github.com/HeQuanX/navicat-keygen-tools/issues/3
+
+最新版本已经失效，旧版本还可以用，就不提交代码了；
+问题原因：libplist最新版本2.2.0修改了包名，“Rename library and all related files by adding an API version resulting in libplist-2.0 and libplist++-2.0”，
+参考地址：https://github.com/libimobiledevice/libplist/releases/2.2.0
+解决方案：修改Makefile文件，将“-lplist++”改为“-lplist++-2.0”。
+
